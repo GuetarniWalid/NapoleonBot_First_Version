@@ -122,8 +122,8 @@ class BinanceBot {
     cleanQuantity(pair, qty) {
         let quantity;
         const currencyParent = pair.slice(0, 3);
-        if(currencyParent === 'BTC') quantity = (qty - 0.003).toFixed(6);
-        else quantity = (qty - 0.14).toFixed(3);
+        if(currencyParent === 'BTC') quantity = (qty - 0.001).toFixed(6);
+        else quantity = (qty - 0.02).toFixed(3);
         return quantity;
     }
 
